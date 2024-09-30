@@ -24,5 +24,5 @@ deploy:
   entrypoint: [""]
  script:
   - aws --version
-  - aws configure set region ap-south-1
+  - aws configure set region us-east-1
   - aws lambda update-function-code --function-name serverless-api-v2 --zip-file fileb://$CI_PROJECT_NAME.zip
