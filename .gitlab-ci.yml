@@ -1,0 +1,28 @@
+stages:
+ - archiving
+ - deploy
+
+archive:
+ stage: archiving
+ only:
+  - main
+ image: ubuntu
+ when: on_success
+ before_script:
+  - apt-get update
+  - apt-get install zip -y
+ script:
+  - zip -r $CI_PROJECT_NAME.zip .
+ artifacts:
+  paths:
+   - $CI_PROJECT_NAME.zip
+
+deploy:
+ stage: deploy
+ image:
+  name: amazon/aws-cli
+  entrypoint: [""]
+ script:
+  - aws --version
+  - aws configure set region ap-south-1
+  - aws lambda update-function-code --function-name serverless-api-v2 --zip-file fileb://$CI_PROJECT_NAME.zip

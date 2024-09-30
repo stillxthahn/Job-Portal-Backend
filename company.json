@@ -1,0 +1,99 @@
+{
+	"job-portal-company": [
+		{
+			"PutRequest": {
+				"Item": {
+					"idCompany": {
+						"N": "1"
+					},
+					"id": {
+						"N": "1"
+					},
+					"name": {
+						"S": "Java Engineer (Middle-Senior, English)"
+					},
+					"tags": {
+						"L": [
+							{
+								"S": "Java"
+							},
+							{
+								"S": "MySQL"
+							}
+						]
+					},
+					"location": {
+						"S": "Hybrid"
+					},
+					"salary": {
+						"S": "1000"
+					},
+					"overview": {
+						"L": [
+							{
+								"S": "At KBTG, we build our own platforms as well as service external well-known clients like PTTOR, Facebook, LINE MAN, GRAB, and many more with modernized technology stack and an open platform structure. We dedicate to build new financial service experiences which aim to satisfy users the most and be part of their daily life."
+							},
+							{
+								"S": "This role is responsible for the application design and development of application components or multiple application solutions to meet business solution and customer requirements."
+							}
+						]
+					},
+					"responsibilities": {
+						"L": [
+							{
+								"S": "Develop accurate and efficient programs"
+							},
+							{
+								"S": "Maintain current knowledge of standard language, coding methods, and operations requirements"
+							},
+							{
+								"S": "Thoroughly tests the operation of completed programs and linkage to other programs"
+							},
+							{
+								"S": "Assists the system analyst to establish file requirements and processing specifications for automated portions of the system"
+							},
+							{
+								"S": "Build software and deploy to UIS/SIT/UAT environment"
+							}
+						]
+					},
+					"experience": {
+						"L": [
+							{
+								"S": "Bachelor's Degree in Computer Engineer, Computer Science, IT or other related fields"
+							},
+							{
+								"S": "Minimum 5-year experience in Java software development"
+							},
+							{
+								"S": "Experience working with one or more from the followings: web application development, Unix environments, mobile application development, information retrieval, networking, developing large-scale software system, version control system, and/or security software development"
+							},
+							{
+								"S": "Good communication in English"
+							}
+						]
+					},
+					"status": {
+						"BOOL": true
+					},
+					"createAt": {
+						"S": "04-26-2024 21:22:17"
+					},
+					"city": {
+						"L": [
+							{
+								"S": "Ho Chi Minh"
+							},
+							{
+								"S": "Ha Noi"
+							}
+						]
+					},
+					"updateAt": {
+						"S": "04-26-2024 14:12:25"
+					}
+				}
+			}
+		}
+	]
+}
